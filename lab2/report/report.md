@@ -8,9 +8,9 @@
 
 1. 理解定点乘法的不同实现算法的原理，掌握基本实现算法。 
 
-2. 熟悉并运用 verilog 语言进行电路设计。 
+2. 熟悉并运用 Verilog 语言进行电路设计。 
 
-3. 为后续设计 cpu 的实验打下基础。
+3. 为后续设计 CPU的实验打下基础。
 
 ## 二、课设器材与设备
 
@@ -35,7 +35,8 @@
 
 时钟clk、复位resetn、输入选择信号input_sel，乘法开始信号mult_begin，高电平时乘法器开始工作，输出信号mult_end，高电平时表示乘法结束。在乘法器内部设置两个32位的乘数输入信号，以及64位的乘法结果输出信号product。
 
-3、设计框图   ![img](report.assets/clip_image004.jpg)
+3、设计框图 
+  ![img](report.assets/clip_image004.jpg)
 
 ## 四、实际实现
 
@@ -141,6 +142,8 @@ endmodule
 ![image-20220508104416198](report.assets/image-20220508104416198.png)
 
 ## 五、测试图片
+
+![image-20220515163013776](report.assets/image-20220515163013776.png)
 
 ## 六、附加问题
 

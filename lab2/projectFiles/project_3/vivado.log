@@ -1,0 +1,25 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Sun May  8 21:42:03 2022
+# Process ID: 34484
+# Current directory: C:/Users/wty02/Desktop/计算机组成原理实验/computerOrganizationLAB/lab2/projectFiles/project_3
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent49880 C:\Users\wty02\Desktop\计算机组成原理实验\computerOrganizationLAB\lab2\projectFiles\project_3\project_3.xpr
+# Log file: C:/Users/wty02/Desktop/计算机组成原理实验/computerOrganizationLAB/lab2/projectFiles/project_3/vivado.log
+# Journal file: C:/Users/wty02/Desktop/计算机组成原理实验/computerOrganizationLAB/lab2/projectFiles/project_3\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/wty02/Desktop/计算机组成原理实验/computerOrganizationLAB/lab2/projectFiles/project_3/project_3.xpr
+INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter.
+Current project path is 'C:/Users/wty02/Desktop/计算机组成原理实验/computerOrganizationLAB/lab2/projectFiles/project_3'
+INFO: [Project 1-313] Project file moved from 'C:/Users/wty02/project_3' since last save.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/vivado/Vivado/2018.3/data/ip'.
+open_project: Time (s): cpu = 00:00:13 ; elapsed = 00:00:10 . Memory (MB): peak = 827.191 ; gain = 221.496
+update_compile_order -fileset sources_1
+exit
+INFO: [Common 17-206] Exiting Vivado at Tue May 10 21:35:44 2022...
