@@ -1,0 +1,43 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Sun May 22 19:28:59 2022
+# Process ID: 11780
+# Current directory: C:/Users/wty02/project_4
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent4996 C:\Users\wty02\project_4\project_4.xpr
+# Log file: C:/Users/wty02/project_4/vivado.log
+# Journal file: C:/Users/wty02/project_4\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/wty02/project_4/project_4.xpr
+update_compile_order -fileset sources_1
+update_compile_order -fileset sim_1
+export_ip_user_files -of_objects  [get_files C:/Users/wty02/project_4/regfile.v] -no_script -reset -force -quiet
+remove_files  C:/Users/wty02/project_4/regfile.v
+export_ip_user_files -of_objects  [get_files C:/Users/wty02/project_4/regfile_display.v] -no_script -reset -force -quiet
+remove_files  C:/Users/wty02/project_4/regfile_display.v
+export_ip_user_files -of_objects  [get_files C:/Users/wty02/project_4/lcd_module.dcp] -no_script -reset -force -quiet
+remove_files  C:/Users/wty02/project_4/lcd_module.dcp
+export_ip_user_files -of_objects  [get_files C:/Users/wty02/project_4/tb.v] -no_script -reset -force -quiet
+remove_files  -fileset sim_1 C:/Users/wty02/project_4/tb.v
+add_files -fileset constrs_1 -norecurse C:/Users/wty02/project_4/project_4.srcs/constrs_1/new/regfile.xdc
+add_files -norecurse C:/Users/wty02/project_4/project_4.srcs/sources_1/new/lcd_module.dcp
+add_files -norecurse {C:/Users/wty02/project_4/project_4.srcs/sources_1/new/regfile_display.v C:/Users/wty02/project_4/project_4.srcs/sources_1/new/regfile.v C:/Users/wty02/project_4/project_4.srcs/sources_1/new/tb.v}
+update_compile_order -fileset sources_1
+export_ip_user_files -of_objects  [get_files C:/Users/wty02/project_4/regfile.xdc] -no_script -reset -force -quiet
+remove_files  -fileset constrs_1 C:/Users/wty02/project_4/regfile.xdc
+reset_run impl_1 -prev_step 
+launch_runs impl_1 -to_step write_bitstream -jobs 12
+wait_on_run impl_1
+reset_run synth_1
+launch_simulation
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top tb [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+launch_simulation
+source tb.tcl
+close_sim

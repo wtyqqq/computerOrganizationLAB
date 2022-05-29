@@ -1,0 +1,130 @@
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+--------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
+| Date         : Sun May 22 17:57:21 2022
+| Host         : DESKTOP-M05FER9 running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file regfile_display_control_sets_placed.rpt
+| Design       : regfile_display
+| Device       : xc7a200t
+--------------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Number of unique control sets                            |    57 |
+| Unused register locations in slices containing registers |    95 |
++----------------------------------------------------------+-------+
+
+
+2. Histogram
+------------
+
++--------+--------------+
+| Fanout | Control Sets |
++--------+--------------+
+|      1 |            1 |
+|      4 |            2 |
+|      5 |            5 |
+|      6 |            2 |
+|      7 |            2 |
+|      8 |            2 |
+|      9 |            3 |
+|     10 |            2 |
+|     11 |            1 |
+|    16+ |           37 |
++--------+--------------+
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |             135 |           66 |
+| No           | No                    | Yes                    |               0 |            0 |
+| No           | Yes                   | No                     |              78 |           36 |
+| Yes          | No                    | No                     |            1010 |          493 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |             146 |           44 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++------------------------+-------------------------------------------------------+-------------------------------------------------------+------------------+----------------+
+|      Clock Signal      |                     Enable Signal                     |                    Set/Reset Signal                   | Slice Load Count | Bel Load Count |
++------------------------+-------------------------------------------------------+-------------------------------------------------------+------------------+----------------+
+|  lcd_module/clk_2_BUFG |                                                       | lcd_module/lcd_draw_module/draw_block_number1         |                1 |              1 |
+|  clk_IBUF_BUFG         | lcd_module/touch_module/input_value[3]_i_1_n_0        | lcd_module/touch_module/input_value[31]_i_1_n_0       |                1 |              4 |
+|  lcd_module/clk_2_BUFG | lcd_module/lcd_draw_module/set_xy_valid_reg_n_0       | lcd_module/lcd_draw_module/draw_block_number1         |                1 |              4 |
+|  clk_IBUF_BUFG         | waddr0                                                | p_0_in                                                |                2 |              5 |
+|  lcd_module/clk_2_BUFG |                                                       | lcd_module/lcd_draw_module/display_count_y[4]_i_1_n_0 |                1 |              5 |
+|  lcd_module/clk_2_BUFG | lcd_module/lcd_init_module/init_display_begin_reg_n_0 | lcd_module/lcd_init_module/init_display_begin0        |                3 |              5 |
+|  lcd_module/clk_2_BUFG | lcd_module/lcd_init_module/display_x_h[4]_i_1_n_0     | lcd_module/lcd_init_module/init_display_begin0        |                3 |              5 |
+|  lcd_module/clk_2_BUFG | lcd_module/lcd_draw_module/draw_wr_valid0             | lcd_module/lcd_draw_module/draw_data[4]_i_1_n_0       |                2 |              5 |
+|  clk_IBUF_BUFG         |                                                       | lcd_module/touch_module/clk_count0                    |                3 |              6 |
+|  lcd_module/clk_2_BUFG | lcd_module/lcd_draw_module/draw_block_end             | lcd_module/lcd_draw_module/draw_block_number0         |                4 |              6 |
+|  clk_IBUF_BUFG         | raddr20                                               | p_0_in                                                |                1 |              7 |
+|  clk_IBUF_BUFG         | raddr10                                               | p_0_in                                                |                1 |              7 |
+|  clk_IBUF_BUFG         | lcd_module/touch_module/send_byte[0]_i_1_n_0          |                                                       |                2 |              8 |
+|  lcd_module/clk_2_BUFG | lcd_module/lcd_draw_module/display_count_x[7]_i_2_n_0 | lcd_module/lcd_draw_module/display_count_x[7]_i_1_n_0 |                2 |              8 |
+|  clk_IBUF_BUFG         |                                                       | display_valid0                                        |                7 |              9 |
+|  lcd_module/clk_2_BUFG |                                                       | lcd_module/lcd_draw_module/td_count_y0                |                5 |              9 |
+|  lcd_module/clk_2_BUFG | lcd_module/lcd_draw_module/td_count_x[8]_i_2_n_0      | lcd_module/lcd_draw_module/td_count_x[8]_i_1_n_0      |                4 |              9 |
+|  lcd_module/clk_2_BUFG | lcd_module/lcd_init_module/display_y0                 | lcd_module/lcd_init_module/init_display_begin0        |                4 |             10 |
+|  lcd_module/clk_2_BUFG | lcd_module/lcd_draw_module/draw_wr_valid0             |                                                       |                4 |             10 |
+|  lcd_module/clk_2_BUFG | lcd_module/lcd_init_module/sel                        | lcd_module/lcd_init_module/init_rom_pc0               |                4 |             11 |
+|  lcd_module/clk_2_BUFG |                                                       |                                                       |               11 |             18 |
+|  clk_IBUF_BUFG         |                                                       | lcd_module/touch_module/rst_count0                    |                6 |             22 |
+|  clk_IBUF_BUFG         |                                                       | lcd_module/touch_module/int_o_en_reg_0                |               13 |             26 |
+|  clk_IBUF_BUFG         | lcd_module/touch_module/input_value[31]_i_2_n_0       | lcd_module/touch_module/input_value[31]_i_1_n_0       |                4 |             28 |
+|  clk_IBUF_BUFG         | rf_module/rf[18][31]_i_1_n_0                          |                                                       |               10 |             32 |
+|  clk_IBUF_BUFG         | rf_module/rf[21][31]_i_1_n_0                          |                                                       |               15 |             32 |
+|  clk_IBUF_BUFG         | rf_module/rf[3][31]_i_1_n_0                           |                                                       |               15 |             32 |
+|  clk_IBUF_BUFG         | rf_module/rf[7][31]_i_1_n_0                           |                                                       |               14 |             32 |
+|  clk_IBUF_BUFG         | rf_module/rf[23][31]_i_1_n_0                          |                                                       |               16 |             32 |
+|  clk_IBUF_BUFG         | rf_module/rf[4][31]_i_1_n_0                           |                                                       |               12 |             32 |
+|  clk_IBUF_BUFG         | rf_module/rf[9][31]_i_1_n_0                           |                                                       |               25 |             32 |
+|  clk_IBUF_BUFG         | rf_module/rf[1][31]_i_1_n_0                           |                                                       |                9 |             32 |
+|  clk_IBUF_BUFG         | rf_module/rf[22][31]_i_1_n_0                          |                                                       |               16 |             32 |
+|  clk_IBUF_BUFG         | rf_module/rf[24][31]_i_1_n_0                          |                                                       |               10 |             32 |
+|  clk_IBUF_BUFG         | rf_module/rf[25][31]_i_1_n_0                          |                                                       |               15 |             32 |
+|  clk_IBUF_BUFG         | rf_module/rf[6][31]_i_1_n_0                           |                                                       |               22 |             32 |
+|  clk_IBUF_BUFG         | wdata0                                                | p_0_in                                                |                8 |             32 |
+|  clk_IBUF_BUFG         | rf_module/rf[13][31]_i_1_n_0                          |                                                       |               11 |             32 |
+|  clk_IBUF_BUFG         | rf_module/rf                                          |                                                       |               30 |             32 |
+|  clk_IBUF_BUFG         | rf_module/rf[11][31]_i_1_n_0                          |                                                       |               17 |             32 |
+|  clk_IBUF_BUFG         | rf_module/rf[10][31]_i_1_n_0                          |                                                       |               16 |             32 |
+|  clk_IBUF_BUFG         | rf_module/rf[12][31]_i_1_n_0                          |                                                       |               10 |             32 |
+|  clk_IBUF_BUFG         | rf_module/rf[14][31]_i_1_n_0                          |                                                       |               13 |             32 |
+|  clk_IBUF_BUFG         | rf_module/rf[15][31]_i_1_n_0                          |                                                       |               15 |             32 |
+|  clk_IBUF_BUFG         | rf_module/rf[29][31]_i_1_n_0                          |                                                       |               19 |             32 |
+|  clk_IBUF_BUFG         | rf_module/rf[2][31]_i_1_n_0                           |                                                       |               10 |             32 |
+|  clk_IBUF_BUFG         | rf_module/rf[30][31]_i_1_n_0                          |                                                       |               21 |             32 |
+|  clk_IBUF_BUFG         | rf_module/rf[20][31]_i_1_n_0                          |                                                       |               17 |             32 |
+|  clk_IBUF_BUFG         | rf_module/rf[28][31]_i_1_n_0                          |                                                       |               12 |             32 |
+|  clk_IBUF_BUFG         | rf_module/rf[16][31]_i_1_n_0                          |                                                       |               10 |             32 |
+|  clk_IBUF_BUFG         | rf_module/rf[19][31]_i_1_n_0                          |                                                       |               16 |             32 |
+|  clk_IBUF_BUFG         | rf_module/rf[27][31]_i_1_n_0                          |                                                       |               19 |             32 |
+|  clk_IBUF_BUFG         | rf_module/rf[8][31]_i_1_n_0                           |                                                       |               28 |             32 |
+|  clk_IBUF_BUFG         | rf_module/rf[26][31]_i_1_n_0                          |                                                       |               17 |             32 |
+|  clk_IBUF_BUFG         | rf_module/rf[5][31]_i_1_n_0                           |                                                       |               14 |             32 |
+|  clk_IBUF_BUFG         | rf_module/rf[17][31]_i_1_n_0                          |                                                       |               13 |             32 |
+|  clk_IBUF_BUFG         |                                                       |                                                       |               55 |            117 |
++------------------------+-------------------------------------------------------+-------------------------------------------------------+------------------+----------------+
+
+

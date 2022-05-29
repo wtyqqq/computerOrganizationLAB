@@ -1,0 +1,138 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Sun May 22 19:28:59 2022
+# Process ID: 11780
+# Current directory: C:/Users/wty02/project_4
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent4996 C:\Users\wty02\project_4\project_4.xpr
+# Log file: C:/Users/wty02/project_4/vivado.log
+# Journal file: C:/Users/wty02/project_4\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/wty02/project_4/project_4.xpr
+INFO: [Common 17-41] Interrupt caught. Command should exit soon.
+INFO: [Common 17-344] 'open_project' was cancelled
+exit
+INFO: [Common 17-206] Exiting Vivado at Sun May 22 19:29:15 2022...
+CRITICAL WARNING: [Project 1-19] Could not find the file 'C:/Users/wty02/project_4/regfile.v'.
+CRITICAL WARNING: [Project 1-19] Could not find the file 'C:/Users/wty02/project_4/regfile_display.v'.
+CRITICAL WARNING: [Project 1-19] Could not find the file 'C:/Users/wty02/project_4/regfile.xdc'.
+CRITICAL WARNING: [Project 1-19] Could not find the file 'C:/Users/wty02/project_4/tb.v'.
+Scanning sources...
+Finished scanning sources
+WARNING: [Project 1-865] Could not find the file C:/Users/wty02/project_4/lcd_module.dcp
+WARNING: [Project 1-865] Could not find the file C:/Users/wty02/project_4/lcd_module.dcp
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.3/data/ip'.
+open_project: Time (s): cpu = 00:00:14 ; elapsed = 00:00:06 . Memory (MB): peak = 784.020 ; gain = 150.570
+update_compile_order -fileset sources_1
+update_compile_order -fileset sim_1
+export_ip_user_files -of_objects  [get_files C:/Users/wty02/project_4/regfile.v] -no_script -reset -force -quiet
+remove_files  C:/Users/wty02/project_4/regfile.v
+export_ip_user_files -of_objects  [get_files C:/Users/wty02/project_4/regfile_display.v] -no_script -reset -force -quiet
+remove_files  C:/Users/wty02/project_4/regfile_display.v
+export_ip_user_files -of_objects  [get_files C:/Users/wty02/project_4/lcd_module.dcp] -no_script -reset -force -quiet
+remove_files  C:/Users/wty02/project_4/lcd_module.dcp
+export_ip_user_files -of_objects  [get_files C:/Users/wty02/project_4/tb.v] -no_script -reset -force -quiet
+remove_files  -fileset sim_1 C:/Users/wty02/project_4/tb.v
+add_files -fileset constrs_1 -norecurse C:/Users/wty02/project_4/project_4.srcs/constrs_1/new/regfile.xdc
+add_files -norecurse C:/Users/wty02/project_4/project_4.srcs/sources_1/new/lcd_module.dcp
+add_files -norecurse {C:/Users/wty02/project_4/project_4.srcs/sources_1/new/regfile_display.v C:/Users/wty02/project_4/project_4.srcs/sources_1/new/regfile.v C:/Users/wty02/project_4/project_4.srcs/sources_1/new/tb.v}
+update_compile_order -fileset sources_1
+export_ip_user_files -of_objects  [get_files C:/Users/wty02/project_4/regfile.xdc] -no_script -reset -force -quiet
+remove_files  -fileset constrs_1 C:/Users/wty02/project_4/regfile.xdc
+reset_run impl_1 -prev_step 
+launch_runs impl_1 -to_step write_bitstream -jobs 12
+WARNING: [Vivado 12-872] Run step 'Design Initialization' is out-of-date.
+[Sun May 22 19:30:45 2022] Launched impl_1...
+Run output will be captured here: C:/Users/wty02/project_4/project_4.runs/impl_1/runme.log
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. PID not specified
+2. Failed to delete one or more files in run directory C:/Users/wty02/project_4/project_4.runs/synth_1
+
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/wty02/project_4/project_4.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'regfile_display' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/wty02/project_4/project_4.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj regfile_display_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/wty02/project_4/project_4.srcs/sources_1/new/regfile.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module regfile
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/wty02/project_4/project_4.srcs/sources_1/new/regfile_display.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module regfile_display
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/wty02/project_4/project_4.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto ff288b213cf141bfa8223e953a99bfbb --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot regfile_display_behav xil_defaultlib.regfile_display xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+ERROR: [VRFC 10-2063] Module <lcd_module> not found while processing module instance <lcd_module> [C:/Users/wty02/project_4/project_4.srcs/sources_1/new/regfile_display.v:79]
+ERROR: [XSIM 43-3322] Static elaboration of top level Verilog design unit(s) in library work failed.
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-99] Step results log file:'C:/Users/wty02/project_4/project_4.sim/sim_1/behav/xsim/elaborate.log'
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'C:/Users/wty02/project_4/project_4.sim/sim_1/behav/xsim/elaborate.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+set_property top tb [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/wty02/project_4/project_4.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/wty02/project_4/project_4.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/wty02/project_4/project_4.srcs/sources_1/new/tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/wty02/project_4/project_4.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto ff288b213cf141bfa8223e953a99bfbb --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_behav xil_defaultlib.tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.regfile
+Compiling module xil_defaultlib.tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/wty02/project_4/project_4.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_behav -key {Behavioral:sim_1:Functional:tb} -tclbatch {tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+source tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:08 ; elapsed = 00:00:07 . Memory (MB): peak = 905.465 ; gain = 13.789
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+exit
+INFO: [Common 17-206] Exiting Vivado at Sun May 22 19:31:32 2022...
