@@ -1,0 +1,17 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/wty02/Pictures/project_3/files/adder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module adder
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/wty02/Pictures/project_3/files/alu.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module alu
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/wty02/Pictures/project_3/files/data_ram.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module data_ram
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/wty02/Pictures/project_3/files/inst_rom.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module inst_rom
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/wty02/Pictures/project_3/files/regfile.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module regfile
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/wty02/Pictures/project_3/files/single_cycle_cpu.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module single_cycle_cpu
+WARNING: [VRFC 10-3380] identifier 'rs_value' is used before its declaration [C:/Users/wty02/Pictures/project_3/files/single_cycle_cpu.v:116]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/wty02/Pictures/project_3/files/tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/wty02/Pictures/project_3/project_3.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl

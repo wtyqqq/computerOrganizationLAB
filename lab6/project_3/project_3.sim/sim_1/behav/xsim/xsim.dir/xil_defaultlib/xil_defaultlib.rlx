@@ -1,0 +1,12 @@
+0.6
+2018.3
+Dec  7 2018
+00:33:28
+C:/Users/wty02/Pictures/project_3/files/adder.v,1625897778,verilog,,C:/Users/wty02/Pictures/project_3/files/alu.v,,adder,,,,,,,,
+C:/Users/wty02/Pictures/project_3/files/alu.v,1625897778,verilog,,C:/Users/wty02/Pictures/project_3/files/data_ram.v,,alu,,,,,,,,
+C:/Users/wty02/Pictures/project_3/files/data_ram.v,1625897778,verilog,,C:/Users/wty02/Pictures/project_3/files/inst_rom.v,,data_ram,,,,,,,,
+C:/Users/wty02/Pictures/project_3/files/inst_rom.v,1625897778,verilog,,C:/Users/wty02/Pictures/project_3/files/regfile.v,,inst_rom,,,,,,,,
+C:/Users/wty02/Pictures/project_3/files/regfile.v,1625897778,verilog,,C:/Users/wty02/Pictures/project_3/files/single_cycle_cpu.v,,regfile,,,,,,,,
+C:/Users/wty02/Pictures/project_3/files/single_cycle_cpu.v,1625897780,verilog,,C:/Users/wty02/Pictures/project_3/files/tb.v,,single_cycle_cpu,,,,,,,,
+C:/Users/wty02/Pictures/project_3/files/tb.v,1625897782,verilog,,,,tb,,,,,,,,
+C:/Users/wty02/Pictures/project_3/project_3.sim/sim_1/behav/xsim/glbl.v,1544155481,verilog,,,,glbl,,,,,,,,
